@@ -1,39 +1,31 @@
-<!-- 替代方案：使用标准 EditText -->
+<!-- res/layout/note_editor.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_gradient">
 
-    <!-- 标题输入框 -->
+    <!-- 添加标题输入框 -->
     <EditText
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="20sp"
+        android:padding="16dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:background="@drawable/edit_text_background"
-        android:hint="@string/note_title_hint"
-        android:inputType="textMultiLine|textCapSentences"
-        android:padding="12dp" />
+        android:hint="请输入标题..." />
 
-    <!-- 内容输入区域 -->
     <EditText
         android:id="@+id/note"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:padding="16dp"
         android:textSize="16sp"
-        android:background="@android:color/transparent"
-        android:hint="@string/note_content_hint"
-        android:inputType="textMultiLine|textCapSentences"
-        android:gravity="start|top"
-        android:padding="12dp"/>
+        android:background="@drawable/background_gradient"
+        android:hint="开始输入您的笔记..."
+        android:gravity="start|top"/>
 
 </LinearLayout>

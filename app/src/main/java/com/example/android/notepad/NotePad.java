@@ -27,24 +27,7 @@ import android.provider.BaseColumns;
  */
 public final class NotePad {
     public static final String AUTHORITY = "com.google.provider.NotePad";
-    /**
-     * Categories table definition.
-     */
-    public static class Categories implements BaseColumns {
-        // Content URI for the categories table
-        public static final Uri CONTENT_URI = Uri.parse("content://com.example.android.notepad.categories");
 
-        // Column names
-        public static final String COLUMN_NAME_NAME = "name";
-        public static final String COLUMN_NAME_COLOR = "color";
-
-        // Default sort order
-        public static final String DEFAULT_SORT_ORDER = COLUMN_NAME_NAME + " ASC";
-
-        // MIME types
-        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.example.android.notepad.category";
-        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.example.android.notepad.category";
-    }
     // This class cannot be instantiated
     private NotePad() {
     }
@@ -61,8 +44,6 @@ public final class NotePad {
          * The table name offered by this provider
          */
         public static final String TABLE_NAME = "notes";
-        // Category ID column
-public static final String COLUMN_NAME_CATEGORY_ID = "category_id";
 
         /*
          * URI definitions
@@ -180,6 +161,65 @@ public static final String COLUMN_NAME_MODIFICATION_DATE = "modified";
     }
 }
 
-
-
+///**
+// * Categories table contract
+// */
+//public final class Categories implements BaseColumns {
+//    // This class cannot be instantiated
+//    private Categories() {}
+//
+//    /**
+//     * The table name offered by this provider
+//     */
+//    public static final String TABLE_NAME = "categories";
+//
+//    /*
+//     * URI definitions
+//     */
+//
+//    /**
+//     * Path part for the Categories URI
+//     */
+//    private static final String PATH_CATEGORIES = "/categories";
+//
+//    /**
+// * The content:// style URL for this table
+// */
+//public static final Uri CONTENT_URI =
+//    Uri.parse("content://" + NotePad.AUTHORITY + PATH_CATEGORIES);
+//
+///**
+// * The content URI base for a single category. Callers must
+// * append a numeric category id to this Uri to retrieve a category
+// */
+//public static final Uri CONTENT_ID_URI_BASE
+//    = Uri.parse("content://" + NotePad.AUTHORITY + PATH_CATEGORIES + "/");
+//
+//
+//
+//    /**
+//     * The MIME type of {@link #CONTENT_URI} providing a directory of categories.
+//     */
+//    public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.google.category";
+//
+//    /**
+//     * The MIME type of a {@link #CONTENT_URI} sub-directory of a single category.
+//     */
+//    public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.google.category";
+//
+//    /**
+//     * The default sort order for this table
+//     */
+//    public static final String DEFAULT_SORT_ORDER = "name ASC";
+//
+//    /*
+//     * Column definitions
+//     */
+//
+//    /**
+//     * Column name for the category name
+//     * <P>Type: TEXT</P>
+//     */
+//    public static final String COLUMN_NAME_NAME = "name";
+//}
 

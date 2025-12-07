@@ -1,4 +1,4 @@
-<!-- res/layout/activity_notes_list.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,15 +25,14 @@
 
     </LinearLayout>
 
-    <!-- 新增的浮动按钮 -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_menu_compose"
-        android:contentDescription="新建笔记"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add new note"
         app:tint="@android:color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
