@@ -154,3 +154,9 @@
 ## 许可证
 
 本项目基于 Apache License 2.0 开源许可，请参阅 LICENSE 文件了解详细信息。
+
+##截图
+![app页面截图](./app/src/main/res/no4.png)
+![长按功能](./app/src/main/res/no1.png)
+![笔记编辑页面](./app/src/main/res/no2.png)
+![笔记搜索功能](./app/src/main/res/no3.png)
