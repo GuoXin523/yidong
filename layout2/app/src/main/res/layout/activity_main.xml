@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello TableLayout"
+        android:gravity="center"
+        android:background="#800080"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open... Ctrl-O"
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="openFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save... Ctrl-S"
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="saveFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save As... Ctrl-Shift-S"
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="saveAsFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Import..."
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="importFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export... Ctrl-E"
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="exportFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:background="#9370DB"
+        android:textColor="#000000"
+        android:onClick="quitApp" />
+
+</LinearLayout>
